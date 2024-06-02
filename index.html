@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANGE ROVER</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS styles */
+        body {
+            background-color: #005107; /* Dark green background color */
+            color: white;
+            font-family: Oswald, sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 250px;
+            background-color: #262829; /* Dark background color */
+            padding-top: 60px; /* Space for the navbar */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-align: center;
+            color: #ffffff !important; /* White text color */
+            transition: all 0.4s ease-in-out;
+            margin-bottom: 30px; /* Adding space between links */
+            font-family: Oswald, sans-serif;
+        }
+
+        .nav-link:hover {
+            color: #00ff33 !important; /* Green text color on hover */
+            background-color: #6c757d; /* Darker background color on hover */
+        }
+
+        .nav-link.active {
+            color: #00ff33 !important; /* Green text color when active */
+            background-color: #6c757d; /* Darker background color when active */
+        }
+
+        .navbar-brand img {
+            max-width: 70%;
+            height: auto;
+            margin-bottom: 90px;
+        }
+
+        .nav-icon {
+            margin-right: 10px;
+        }
+
+        .content {
+            margin-left: 250px; /* Adjusted to sidebar width */
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .img-fluid {
+            width: 100%;
+            height: 230px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: transparent;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <nav class="nav flex-column">
+            <a class="navbar-brand" href="index.html"><img src="img/2014_Land_Rover_Range_Rover_Sport_Rover_Company_Logo_Car_PNG_-_Free_Download-removebg-preview.png" alt="Logo" style="margin-left: 46px;"></a>
+            <a class="nav-link" href="index.html"><i class="fas fa-home nav-icon"></i>Beranda</a>
+            <a class="nav-link" href="models.html"><i class="fas fa-car nav-icon"></i>Models</a>
+            <a class="nav-link" href="features.html"><i class="fas fa-cogs nav-icon"></i>Features</a>
+            <a class="nav-link" href="order.html"><i class="fas fa-shopping-cart nav-icon"></i>Order</a>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div>
+            <h1>Welcome to Our Range Rover Website</h1><br>
+            <p>Jelajahi kekuatan, keanggunan, dan performa legendaris dari Ford Mustang GT. Mobil ini dirancang untuk memberikan pengalaman berkendara yang tak terlupakan, dengan mesin bertenaga dan desain yang memukau. Baik di jalan raya maupun di trek balap, Mustang GT menawarkan kombinasi sempurna antara kecepatan dan kenyamanan. Dengan berbagai fitur canggih dan teknologi terkini, Anda akan merasakan sensasi berkendara yang luar biasa setiap kali duduk di belakang kemudinya. Temukan lebih banyak tentang model, fitur, dan testimoni dari pelanggan kami di halaman ini.</p>
+            
+        </div>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://i.pinimg.com/236x/01/df/a1/01dfa1f9ab9d0dc192735f9268152072.jpg" alt="Image 1" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/86/9d/e6/869de661a5cd9d02cd850f9a32144f56.jpg" alt="Image 2" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://i.pinimg.com/564x/b5/da/04/b5da0422e96f9dbaa7b35d6f7dc46363.jpg" alt="Image 3" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://i.pinimg.com/564x/6e/63/28/6e6328a31251c931b30e90a3207e19f6.jpg" alt="Image 4" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div style="margin: 20px 0;">
+            <input type="text" id="nama" class="form-control" placeholder="Masukkan Nama Anda" style="width: 300px; margin: 0 auto;">
+            <button onclick="tampilkanAlert()" class="btn btn-primary mt-3">Salam Kenal</button>
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

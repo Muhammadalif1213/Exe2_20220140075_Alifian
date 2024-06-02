@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANGE ROVER</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS styles */
+        body {
+            background-color: #005107; /* Dark green background color */
+            color: white;
+            font-family: Oswald, sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 250px;
+            background-color: #262829; /* Dark background color */
+            padding-top: 60px; /* Space for the navbar */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-align: center;
+            color: #ffffff !important; /* White text color */
+            transition: all 0.4s ease-in-out;
+            margin-bottom: 30px; /* Adding space between links */
+            font-family: Oswald, sans-serif;
+        }
+
+        .nav-link:hover {
+            color: #00ff33 !important; /* Green text color on hover */
+            background-color: #6c757d; /* Darker background color on hover */
+        }
+
+        .nav-link.active {
+            color: #00ff33 !important; /* Green text color when active */
+            background-color: #6c757d; /* Darker background color when active */
+        }
+
+        .navbar-brand img {
+            max-width: 70%;
+            height: auto;
+            margin-bottom: 90px;
+        }
+
+        .nav-icon {
+            margin-right: 10px;
+        }
+
+        .content {
+            margin-left: 250px; /* Adjusted to sidebar width */
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .img-fluid {
+            width: 100%;
+            height: 230px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: transparent;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <nav class="nav flex-column">
+            <a class="navbar-brand" href="index.html"><img src="img/2014_Land_Rover_Range_Rover_Sport_Rover_Company_Logo_Car_PNG_-_Free_Download-removebg-preview.png" alt="Logo" style="margin-left: 46px;"></a>
+            <a class="nav-link" href="index.html"><i class="fas fa-home nav-icon"></i>Beranda</a>
+            <a class="nav-link" href="models.html"><i class="fas fa-car nav-icon"></i>Models</a>
+            <a class="nav-link" href="features.html"><i class="fas fa-cogs nav-icon"></i>Features</a>
+            <a class="nav-link" href="order.html"><i class="fas fa-shopping-cart nav-icon"></i>Order</a>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Order Now</h2>
+                <form action="submit_order.php" method="post">
+                    <div class="form-group">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="model">Car Model:</label>
+                        <select id="model" name="model" class="form-control" required>
+                            <option value="">Select Model</option>
+                            <option value="Range Rover">Range Rover</option>
+                            <option value="Range Rover Sport">Range Rover Sport</option>
+                            <option value="Range Rover Evoque">Range Rover Evoque</option>
+                            <option value="Range Rover Vogue">Range Rover Vogue</option>
+                            <option value="Range Rover Discovery">Range Rover Discovery</option>
+                            <option value="Range Rover Defender">Range Rover Defender</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="order_date">Order Date:</label>
+                        <input type="date" id="order_date" name="order_date" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Color:</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="color" id="color_black" value="Black" required>
+                            <label class="form-check-label" for="color_black">Black</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="color" id="color_white" value="White" required>
+                            <label class="form-check-label" for="color_white">White</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="color" id="color_red" value="red" required>
+                            <label class="form-check-label" for="color_red">Red</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="features">Additional Features:</label><br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="leather_seats" name="features[]" value="Leather Seats">
+                            <label class="form-check-label" for="leather_seats">Leather Seats</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="sunroof" name="features[]" value="Sunroof">
+                            <label class="form-check-label" for="sunroof">Sunroof</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="spoiler" name="features[]" value="Spoiler">
+                            <label class="form-check-label" for="spoiler">Spoiler</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Message:</label>
+                        <textarea id="message" name="message" class="form-control" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="showOrderInfo()">Submit Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+    <script src="script.js">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

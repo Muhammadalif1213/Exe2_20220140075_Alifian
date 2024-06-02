@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANGE ROVER</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS styles */
+        body {
+            background-color: #005107; /* Dark green background color */
+            color: white;
+            font-family: Oswald, sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 250px;
+            background-color: #262829; /* Dark background color */
+            padding-top: 60px; /* Space for the navbar */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-align: center;
+            color: #ffffff !important; /* White text color */
+            transition: all 0.4s ease-in-out;
+            margin-bottom: 30px; /* Adding space between links */
+            font-family: Oswald, sans-serif;
+        }
+
+        .nav-link:hover {
+            color: #00ff33 !important; /* Green text color on hover */
+            background-color: #6c757d; /* Darker background color on hover */
+        }
+
+        .nav-link.active {
+            color: #00ff33 !important; /* Green text color when active */
+            background-color: #6c757d; /* Darker background color when active */
+        }
+
+        .navbar-brand img {
+            max-width: 70%;
+            height: auto;
+            margin-bottom: 90px;
+        }
+
+        .nav-icon {
+            margin-right: 10px;
+        }
+
+        .content {
+            margin-left: 250px; /* Adjusted to sidebar width */
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .img-fluid {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            width: 350PX;
+            background-color: #333333;
+            border: 1px solid #444444;
+            margin-bottom: 30px;
+        }
+
+        .card-body {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <nav class="nav flex-column">
+            <a class="navbar-brand" href="index.html"><img src="img/2014_Land_Rover_Range_Rover_Sport_Rover_Company_Logo_Car_PNG_-_Free_Download-removebg-preview.png" alt="Logo" style="margin-left: 46px;"></a>
+            <a class="nav-link" href="index.html"><i class="fas fa-home nav-icon"></i>Beranda</a>
+            <a class="nav-link active" href="models.html"><i class="fas fa-car nav-icon"></i>Models</a>
+            <a class="nav-link" href="features.html"><i class="fas fa-cogs nav-icon"></i>Features</a>
+            <a class="nav-link" href="order.html"><i class="fas fa-shopping-cart nav-icon"></i>Order</a>
+
+        </nav>
+    </div>
+
+    <div class="content">
+        <div>
+            <h1>MODELS OF CARS</h1><br>
+            <p>
+                Halaman ini adalah penghubung untuk menjelajahi berbagai model mobil Range Rover. Anda akan menemukan informasi tentang berbagai model mobil, fitur-fitur unggulan, serta dapat melakukan pemesanan langsung. Selamat menjelajahi!</p>      
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i.pinimg.com/564x/6e/63/28/6e6328a31251c931b30e90a3207e19f6.jpg" alt="Model 1" class="img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Range Rover Evoque</h5>
+                        <p class="card-text">Sebuah SUV yang stylish dan modern, cocok untuk perjalanan di kota maupun off-road.</p>
+                        <a href="features.html" class="btn btn-primary">Detail</a>
+                        <a href="order.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i.pinimg.com/564x/82/d3/d3/82d3d394f367349f0b8e4c0ee6a75c37.jpg" alt="Model 2" class="img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Range Rover Sport</h5>
+                        <p class="card-text">Kombinasi sempurna antara performa dan kemewahan, ideal untuk segala medan.</p>
+                        <a href="features.html" class="btn btn-primary">Detail</a>
+                        <a href="order.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i.pinimg.com/564x/d2/4a/ca/d24acabea6c02038db6c79648c06c9d6.jpg" alt="Model 3" class="img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Range Rover Velar</h5>
+                        <p class="card-text">Desain futuristik dengan teknologi canggih untuk kenyamanan dan keamanan berkendara.</p>
+                        <a href="features.html" class="btn btn-primary">Detail</a>
+                        <a href="order.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i.pinimg.com/564x/fc/4f/52/fc4f525cb24f35d652eb02684facaadc.jpg" alt="Model 4" class="img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Range Rover Vogue</h5>
+                        <p class="card-text">Kemewahan tertinggi dengan desain interior premium dan performa off-road yang luar biasa.</p>
+                        <a href="features.html" class="btn btn-primary">Detail</a>
+                        <a href="order.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i.pinimg.com/564x/1a/ec/fa/1aecfaf870b831a75158d91e2ed90fcd.jpg" alt="Model 5" class="img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Range Rover Discovery</h5>
+                        <p class="card-text">SUV keluarga dengan ruang luas dan teknologi keselamatan terbaru untuk kenyamanan perjalanan Anda.</p>
+                        <a href="features.html" class="btn btn-primary">Detail</a>
+                        <a href="order.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i.pinimg.com/564x/e0/5b/8d/e05b8d507a679b3eb95c65bf4d4f3056.jpg" alt="Model 6" class="img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Range Rover Defender</h5>
+                        <p class="card-text">Ikon off-road yang legendaris dengan kemampuan luar biasa di segala medan.</p>
+                        <a href="features.html" class="btn btn-primary">Detail</a>
+                        <a href="order.html" class="btn btn-secondary">Order</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
